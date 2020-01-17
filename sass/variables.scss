@@ -1,0 +1,10 @@
+// color
+$white: #FFFFF;
+$bunker: #151C22;
+$athens-gray: #F1F2F4;
+
+$breakpoints: (
+        'medium': (min-width: 800px),
+        'large': (min-width: 1000px),
+        'huge': (min-width: 1200px),
+);
