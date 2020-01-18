@@ -2,79 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Work+Sans:400,500,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/script.js"></script>
     <title>Denim</title>
 </head>
-<body class="main-page">
+<body class="page">
 <header class="header main-page__header">
     <h1 class="logo header__logo"><a class="logo__link header__link">Nîmes</a></h1>
     <div class="header__container">
-        <ul class="catalog-menu header__catalog-menu main-page__catalog-menu">
-            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Woman</a></li>
-            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Man</a></li>
-            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">New</a></li>
-        </ul>
-        <button class="header__button">
-            <object type="image/svg+xml" data="img/arrow.svg"></object>
-        </button>
-        <ul class="user-menu header__user-menu main_page__user-menu">
-            <li class="user-menu__item"><a class="user-menu__link" href="#">
-                <object type="image/svg+xml" data="img/shopcart.svg"></object>
-            </a></li>
-            <li class="user-menu__item"><a class="user-menu__link" href="#">
-                <object type="image/svg+xml" data="img/search.svg"></object>
-            </a></li>
-        </ul>
-        <ul class="main-socials-menu header__socials-menu">
-            <li class="main-socials-menu__item"><a class="main-socials-menu__link" href="#">Facebook</a></li>
-            <li class="main-socials-menu__item"><a class="main-socials-menu__link" href="#">Instagram</a></li>
-        </ul>
-        <div class="promo header__promo">
-            <h2 class="promo__title">Denim</h2>
-            <h3 class="promo__tagline">The quality you deserve</h3>
-            <img src="img/promo.jpg" alt="Promo image" class="promo__img">
-            <button class="button promo__button">Check new collection</button>
+        <div class="header__container--first">
+            <ul class="catalog-menu header__catalog-menu main-page__catalog-menu">
+                <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Woman</a></li>
+                <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Man</a></li>
+                <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">New</a></li>
+            </ul>
+            <button class="header__button">
+                <a href="#bestsellers">
+                    <svg width="12" height="29" viewBox="0 0 12 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0V17V27M6 27L11 21M6 27L1 21" stroke="#151C22" stroke-width="2"></path>
+                    </svg>
+                </a>
+            </button>
+        </div>
+        <div class="header__container--third">
+            <ul class="user-menu header__user-menu main_page__user-menu">
+                <li class="user-menu__item"><a class="user-menu__link" href="#">
+                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H4.63636L7.07273 12.4771C7.15586 12.8718 7.38355 13.2263 7.71595 13.4785C8.04835 13.7308 8.46427 13.8649 8.89091 13.8571H17.7273C18.1539 13.8649 18.5698 13.7308 18.9022 13.4785C19.2346 13.2263 19.4623 12.8718 19.5455 12.4771L21 5.28571H5.54545M9.18182 18.1429C9.18182 18.6162 8.7748 19 8.27273 19C7.77065 19 7.36364 18.6162 7.36364 18.1429C7.36364 17.6695 7.77065 17.2857 8.27273 17.2857C8.7748 17.2857 9.18182 17.6695 9.18182 18.1429ZM19.1818 18.1429C19.1818 18.6162 18.7748 19 18.2727 19C17.7707 19 17.3636 18.6162 17.3636 18.1429C17.3636 17.6695 17.7707 17.2857 18.2727 17.2857C18.7748 17.2857 19.1818 17.6695 19.1818 18.1429Z"
+                              stroke="#151C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z"
+                              stroke="#151C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </a></li>
+            </ul>
+            <ul class="main-socials-menu header__socials-menu">
+                <li class="main-socials-menu__item"><a class="main-socials-menu__link" href="#">Facebook</a></li>
+                <li class="main-socials-menu__item"><a class="main-socials-menu__link" href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="header__container--second">
+            <div class="promo header__promo">
+                <div class="promo__container">
+                    <h2 class="promo__title">Denim</h2>
+                    <h3 class="promo__tagline">The quality you deserve</h3>
+                    <button class="button promo__button">Check new collection</button>
+                </div>
+                <div class="promo__img-container">
+                    <img src="img/promo.jpg" alt="Promo image" class="promo__img">
+                </div>
+            </div>
         </div>
     </div>
 </header>
-<main>
-    <section class="bestsellers">
+<main class="main-page">
+    <section id="bestsellers" class="bestsellers main-page__bestsellers">
         <h2 class="title bestsellers__title">Bestsellers</h2>
         <a class="view-all bestsellers__view-all" href="catalog.html">View all</a>
+        <div class="bestsellers__items"></div>
     </section>
-    <article class="fashion-collection-promo">
-        <h2 class="fashion-collection-promo__title">Street fashion collection</h2>
-        <h3 class="fashion-collection-promo__name">Fall 2019</h3>
+    <article class="fashion-collection-promo main-page__fashion-collection-promo">
+        <div class="fashion-collection-promo__container">
+            <h2 class="fashion-collection-promo__name">Street fashion collection</h2>
+            <h3 class="title fashion-collection-promo__title">Fall 2019</h3>
+            <button class="button fashion-collection-promo__button">Shop now</button>
+        </div>
         <img class="fashion-collection-promo__img" src="img/fall2019.jpg" alt="Fashion collection promo image">
-        <button class="button fashion-collection-promo__button">Shop now</button>
     </article>
-    <section class="categories">
-        <h2 class="title categories__title">Categories</h2>
+    <section class="categories main-page__categories">
+        <h2 class="title categories__title">Shop by category</h2>
         <a class="view-all categories__view-all" href="catalog.html">View all</a>
+        <div class="categories__items"></div>
     </section>
 </main>
 <footer class="footer main-page__footer">
-    <h1 class="logo header__logo"><a class="logo__link footer__link">Nîmes</a></h1>
+    <h1 class="logo footer__logo"><a class="logo__link footer__link">Nîmes</a></h1>
     <nav class="menu footer__menu">
-        <ul class="site-menu">
+        <ul class="site-menu footer__site-menu">
             <li class="site-menu__item"><a class="site-menu__link" href="#">Shop</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="#">Delivery</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="#">Service</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="#">Sitemap</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="#">Contacts</a></li>
         </ul>
-        <ul class="socials-menu">
-            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+        <ul class="socials-menu footer__socials-menu">
+            <li class="socials-menu__item"><a class="socials-menu__link" href="#">
                 <object type="image/svg+xml" data="img/facebook.svg"></object>
             </a></li>
-            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+            <li class="socials-menu__item"><a class="socials-menu__link" href="#">
                 <object type="image/svg+xml" data="img/instagram.svg"></object>
             </a></li>
-            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+            <li class="socials-menu__item"><a class="socials-menu__link" href="#">
                 <object type="image/svg+xml" data="img/pinterest.svg"></object>
             </a></li>
-            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+            <li class="socials-menu__item"><a class="socials-menu__link" href="#">
                 <object type="image/svg+xml" data="img/twitter.svg"></object>
             </a></li>
         </ul>

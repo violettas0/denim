@@ -1,7 +1,7 @@
 import { makeProducts } from './makeProducts.js'
 
-let bestsellers = document.body.querySelector('.bestsellers');
-let categories = document.body.querySelector('.categories');
+let bestsellers = document.body.querySelector('.bestsellers__items');
+let categories = document.body.querySelector('.categories__items');
 
 let bestsellersItems = {
     amount: 4,
@@ -14,7 +14,7 @@ let bestsellersItems = {
 let categoriesItems = {
     amount: 4,
     link: 'catalog.html',
-    names: ['Jeans', 'Shirts', 'Jacket', 'Overalls'],
+    names: ['Jeans', 'Shirts', 'Jackets', 'Overalls'],
     img: 'ct'
 };
 

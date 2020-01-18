@@ -1,0 +1,19 @@
+@import '../variables';
+@import '../mixins';
+
+.site-menu {
+  @include reset-list();
+
+  display: flex;
+  flex-flow: row;
+}
+
+.site-menu__item:not(:last-of-type) {
+  margin-right: 35px;
+}
+
+.site-menu__link {
+  @include reset-link();
+
+  color: $white;
+}

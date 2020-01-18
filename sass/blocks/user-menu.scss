@@ -1,0 +1,11 @@
+@import '../variables';
+@import '../mixins';
+
+.user-menu {
+  @include reset-list();
+}
+
+.user-menu__item {
+  text-align: end;
+  margin-bottom: 28px;
+}

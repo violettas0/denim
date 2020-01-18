@@ -1,0 +1,14 @@
+@import '../variables';
+@import '../mixins';
+
+.socials-menu {
+  @include reset-list();
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.socials-menu__item:not(:last-of-type) {
+  margin-right: 32px;
+}

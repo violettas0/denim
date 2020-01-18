@@ -1,0 +1,51 @@
+@import '../variables';
+@import '../mixins';
+
+.bestsellers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bestsellers__view-all {
+  align-self: center;
+}
+
+.bestsellers__items {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+
+  margin-top: 64px;
+}
+
+.bestsellers__link {
+  @include reset-link();
+}
+
+.bestsellers__item {
+  display: flex;
+  flex-flow: column;
+}
+
+.bestsellers__img {
+  order: -1;
+
+  margin-bottom: 21px;
+}
+
+.bestsellers__name {
+  @include reset();
+
+  margin-bottom: 7px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.bestsellers__price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}

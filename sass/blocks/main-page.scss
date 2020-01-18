@@ -1,7 +1,31 @@
+@import '../variables';
+@import '../mixins';
+
 .main-page {
+  @include size(1366px, auto);
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding: 119px 98px;
+
   background: $white;
 }
 
-.main-page__header {
-  
+.main-page__catalog-menu {
+  margin-top: -7px;
+  margin-left: 4px;
 }
+
+.main-page__bestsellers {
+  margin-bottom: 126px;
+}
+
+.main-page__fashion-collection-promo {
+  margin-bottom: 119px;
+}
+

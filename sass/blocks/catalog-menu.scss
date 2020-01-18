@@ -1,0 +1,17 @@
+@import '../variables';
+@import '../mixins';
+
+.catalog-menu {
+  @include reset-list();
+}
+
+.catalog-menu__item {
+  margin-bottom: 24px;
+}
+
+.catalog-menu__link {
+  @include reset-link();
+
+  font-size: 16px;
+  line-height: 19px;
+}

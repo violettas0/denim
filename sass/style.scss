@@ -1,9 +1,21 @@
 @import 'variables.scss';
 @import 'mixins.scss';
-@import 'blocks/main-page';
+@import 'blocks/page';
+@import 'blocks/button';
+@import 'blocks/logo';
+@import 'blocks/title';
+@import 'blocks/view-all';
+@import 'blocks/catalog-menu';
+@import 'blocks/user-menu';
+@import 'blocks/main-socials-menu';
+@import 'blocks/site-menu';
+@import 'blocks/socials-menu';
+@import 'blocks/promo';
 @import 'blocks/bestsellers';
 @import 'blocks/categories';
 @import 'blocks/fashion-collection-promo';
 @import 'blocks/footer';
 @import 'blocks/header';
+@import 'blocks/main-page';
+
 

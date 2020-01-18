@@ -1,0 +1,32 @@
+@import '../variables';
+@import '../mixins';
+
+.footer,
+.footer__logo {
+  color: $white;
+
+  background: $bunker;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  text-align: center;
+
+  margin: 0;
+  padding-top: 46px;
+  padding-bottom: 25px;
+}
+
+.footer__site-menu {
+  margin-bottom: 34px;
+}
+
+.footer__socials-menu {
+  margin-bottom: 44px;
+}

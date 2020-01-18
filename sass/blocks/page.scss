@@ -1,0 +1,11 @@
+@import '../variables';
+
+.page {
+  @include reset();
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+
+  color: $bunker;
+}

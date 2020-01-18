@@ -1,0 +1,46 @@
+@import '../variables';
+@import '../mixins';
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories__view-all {
+  align-self: center;
+}
+
+.categories__items {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+
+  margin-top: 64px;
+}
+
+.categories__link {
+  @include reset-link();
+}
+
+.categories__item {
+  display: flex;
+  flex-flow: column;
+}
+
+.categories__img {
+  order: -1;
+
+  margin-bottom: 21px;
+}
+
+.categories__name {
+  @include reset();
+
+  margin-bottom: 7px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+

@@ -24,7 +24,7 @@ function style() {
             .pipe(postcss([
                 autoprefixer()
             ]))
-            .pipe(gulp.dest("./css"))
+            .pipe(gulp.dest("./css/style.css"))
             .pipe(server.stream())
     )
 }

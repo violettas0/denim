@@ -1,9 +1,69 @@
-@import "../variables.scss";
+@import '../variables';
+@import '../mixins';
 
 .header {
+  background: $athens-gray;
+}
 
+.header__logo {
+  text-align: center;
+
+  margin: 0;
+  padding: 20px 0;
+
+  background: $white;
 }
 
 .header__container {
-  background: $athens-gray;
+  @include size(1366px, auto);
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 50px 96px 46px 95px;
+}
+
+.header__container--first {
+  order: 1;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  margin-right: 67px;
+}
+
+.header__container--second {
+  order: 2;
+}
+
+.header__container--third {
+  order: 3;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+
+.header__button {
+  @include reset();
+  @include size(10px, 31px);
+
+  padding-left: 3px;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__socials-menu {
+  margin-left: 58px;
 }

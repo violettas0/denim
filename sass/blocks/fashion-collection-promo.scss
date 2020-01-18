@@ -1,0 +1,69 @@
+@import '../variables';
+@import '../mixins';
+
+.fashion-collection-promo {
+  display: flex;
+}
+
+.fashion-collection-promo__container {
+  @include size(400px, 308px);
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+
+  padding: 70px;
+
+  background: $athens-gray;
+
+  z-index: 2;
+
+  &::before {
+    @include size(470px, 370px);
+
+    content: "";
+
+    position: absolute;
+
+    top: -31px;
+    left: 0;
+
+    background-image: url('../img/big-diagonal-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: -1;
+  }
+}
+
+.fashion-collection-promo__name {
+  @include reset();
+
+  order: -1;
+
+  margin-top: -5px;
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $rolling-stone;
+}
+
+.fashion-collection-promo__title {
+  margin-bottom: auto;
+}
+
+.fashion-collection-promo__button {
+  justify-self: end;
+}
+
+.fashion-collection-promo__img {
+  @include size(700px, 370px);
+
+  order: -1;
+}
