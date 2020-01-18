@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
     <title>Denim</title>
 </head>
 <body class="main-page">
 <header class="header main-page__header">
-    <h1 class="logo header__logo">Nîmes</h1>
-    <ul class="catalog-menu main-page__catalog-menu">
-        <li class="catalog-menu__item"><a class="catalog-menu__link">Woman</a></li>
-        <li class="catalog-menu__item"><a class="catalog-menu__link">Man</a></li>
-        <li class="catalog-menu__item"><a class="catalog-menu__link">New</a></li>
-    </ul>
-    <button class="header__button"><include src=""></include></button>
-    <ul class="user-menu main_page__catalog-menu">
-        <li class="user-menu__item"><a class="user-menu__link"></a></li>
-        <li class="user-menu__item"><a class="user-menu__link"></a></li>
-    </ul>
-    <ul class="links-menu">
-        <li class="links-menu__item"><a class="links-menu__link">Facebook</a></li>
-        <li class="links-menu__item"><a class="links-menu__link">Instagram</a></li>
-    </ul>
-    <div class="promo header__promo">
-        <h2 class="promo__title">Denim</h2>
-        <h3 class="promo__tagline">The quality you deserve</h3>
-        <img src="img/promo.jpg" alt="Promo image" class="promo__img">
-        <button class="button promo__button">Check new collection</button>
+    <h1 class="logo header__logo"><a class="logo__link header__link">Nîmes</a></h1>
+    <div class="header__container">
+        <ul class="catalog-menu header__catalog-menu main-page__catalog-menu">
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Woman</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Man</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">New</a></li>
+        </ul>
+        <button class="header__button">
+            <object type="image/svg+xml" data="img/arrow.svg"></object>
+        </button>
+        <ul class="user-menu header__user-menu main_page__user-menu">
+            <li class="user-menu__item"><a class="user-menu__link" href="#">
+                <object type="image/svg+xml" data="img/shopcart.svg"></object>
+            </a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#">
+                <object type="image/svg+xml" data="img/search.svg"></object>
+            </a></li>
+        </ul>
+        <ul class="main-socials-menu header__socials-menu">
+            <li class="main-socials-menu__item"><a class="main-socials-menu__link" href="#">Facebook</a></li>
+            <li class="main-socials-menu__item"><a class="main-socials-menu__link" href="#">Instagram</a></li>
+        </ul>
+        <div class="promo header__promo">
+            <h2 class="promo__title">Denim</h2>
+            <h3 class="promo__tagline">The quality you deserve</h3>
+            <img src="img/promo.jpg" alt="Promo image" class="promo__img">
+            <button class="button promo__button">Check new collection</button>
+        </div>
     </div>
 </header>
 <main>
     <section class="bestsellers">
         <h2 class="title bestsellers__title">Bestsellers</h2>
-        <a class="view-all bestsellers__view-all" href="">View all</a>
+        <a class="view-all bestsellers__view-all" href="catalog.html">View all</a>
     </section>
     <article class="fashion-collection-promo">
         <h2 class="fashion-collection-promo__title">Street fashion collection</h2>
@@ -42,24 +51,32 @@
     </article>
     <section class="categories">
         <h2 class="title categories__title">Categories</h2>
-        <a class="view-all categories__view-all" href="">View all</a>
+        <a class="view-all categories__view-all" href="catalog.html">View all</a>
     </section>
 </main>
 <footer class="footer main-page__footer">
-    <h1 class="logo footer__logo">Nîmes</h1>
+    <h1 class="logo header__logo"><a class="logo__link footer__link">Nîmes</a></h1>
     <nav class="menu footer__menu">
         <ul class="site-menu">
-            <li class="site-menu__item"><a class="site-menu__link">Shop</a></li>
-            <li class="site-menu__item"><a class="site-menu__link">Delivery</a></li>
-            <li class="site-menu__item"><a class="site-menu__link">Service</a></li>
-            <li class="site-menu__item"><a class="site-menu__link">Sitemap</a></li>
-            <li class="site-menu__item"><a class="site-menu__link">Contacts</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Shop</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Delivery</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Service</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Sitemap</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Contacts</a></li>
         </ul>
-        <ul class="links-menu">
-            <li class="links-menu__item"><a class="links-menu__link"></a></li>
-            <li class="links-menu__item"><a class="links-menu__link"></a></li>
-            <li class="links-menu__item"><a class="links-menu__link"></a></li>
-            <li class="links-menu__item"><a class="links-menu__link"></a></li>
+        <ul class="socials-menu">
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/facebook.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/instagram.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/pinterest.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/twitter.svg"></object>
+            </a></li>
         </ul>
     </nav>
     <script src="js/script.js"></script>

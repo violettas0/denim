@@ -17,7 +17,7 @@ function html() {
 
 function style() {
     return(
-        gulp.src("./sass/**/*.scss")
+        gulp.src("./sass/style.scss")
             .pipe(plumber())
             .pipe(sass())
             .pipe(sass().on("error", sass.logError))

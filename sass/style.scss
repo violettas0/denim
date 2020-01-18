@@ -1,6 +1,9 @@
 @import 'variables.scss';
 @import 'mixins.scss';
+@import 'blocks/main-page';
+@import 'blocks/bestsellers';
+@import 'blocks/categories';
+@import 'blocks/fashion-collection-promo';
+@import 'blocks/footer';
+@import 'blocks/header';
 
-body {
-  background: $white;
-}

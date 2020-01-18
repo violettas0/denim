@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/catalog.js"></script>
+    <title>Denim</title>
+</head>
+<body>
+<body class="catalog-page">
+<header class="header catalog-page__header">
+    <h1 class="logo header__logo"><a class="logo__link header__link" href="index.html">Nîmes</a></h1>
+    <ul class="catalog-menu catalog-page__catalog-menu">
+        <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Woman</a></li>
+        <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Man</a></li>
+        <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">New</a></li>
+    </ul>
+    <ul class="user-menu catalog-page__user-menu">
+        <li class="user-menu__item"><a class="user-menu__link" href="#">
+            <object type="image/svg+xml" data="img/shopcart.svg"></object>
+        </a></li>
+        <li class="user-menu__item"><a class="user-menu__link" href="#">
+            <object type="image/svg+xml" data="img/search.svg"></object>
+        </a></li>
+    </ul>
+    <ul class="pagination">
+        <li class="pagination__item"><a href="#" class="pagination__link">All categories</a></li>
+        <li class="pagination__item"><a href="#" class="pagination__link">Women</a></li>
+        <li class="pagination__item"><a class="pagination__link pagination__link--current">Jackets</a></li>
+    </ul>
+    <h2 class="title catalog-page__title">Denim Collection<br> Fall 2019</h2>
+    <img class="header__img" src="img/catalogimg.jpg" alt="Promo catalog photo">
+</header>
+<main>
+    <div class="filter">
+        <h2 class="filter__title">Filter by</h2>
+        <form class="filter__price">
+            <label for="price" class="filter__name">Price</label>
+            <input id="price" type="range">
+        </form>
+        <form class="filter__color">
+            <label for="color" class="filter__name">Color</label>
+            <input id="color" type="radio">
+        </form>
+        <form class="filter__collection">
+            <label class="filter__name">Collection</label>
+            <button class="collection__button">Casual</button>
+            <button class="collection__button">Petite</button>
+            <button class="collection__button collection__button--active">Classic</button>
+            <button class="collection__button">Soulluxe</button>
+        </form>
+        <button class="button filter__button">Apply</button>
+        <button class="filter__clear">Clear all</button>
+    </div>
+    <section class="catalog">
+
+    </section>
+    <div class="load-items">
+        <span class="load-items__progress-bar"></span>
+        <span class="load-items__text">Showing 9 of 45 items</span>
+        <button class="button load-items__button">Load more</button>
+    </div>
+</main>
+<footer class="footer">
+    <h1 class="logo header__logo"><a class="logo__link footer__link" href="index.html">Nîmes</a></h1>
+    <nav class="menu footer__menu">
+        <ul class="site-menu">
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Shop</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Delivery</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Service</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Sitemap</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Contacts</a></li>
+        </ul>
+        <ul class="socials-menu">
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/facebook.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/instagram.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/pinterest.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/twitter.svg"></object>
+            </a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

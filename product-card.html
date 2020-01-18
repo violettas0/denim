@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/product-card.js"></script>
+    <title>Denim</title>
+</head>
+<body>
+<body class="product-card-page">
+<header class="header product-card-page__header">
+    <h1 class="logo header__logo"><a class="logo__link header__link" href="index.html">Nîmes</a></h1>
+    <ul class="catalog-menu product-card-page__catalog-menu">
+        <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Woman</a></li>
+        <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Man</a></li>
+        <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">New</a></li>
+    </ul>
+    <ul class="user-menu product-card-page__user-menu">
+        <li class="user-menu__item"><a class="user-menu__link" href="#">
+            <object type="image/svg+xml" data="img/shopcart.svg"></object>
+        </a></li>
+        <li class="user-menu__item"><a class="user-menu__link" href="#">
+            <object type="image/svg+xml" data="img/search.svg"></object>
+        </a></li>
+    </ul>
+</header>
+<main>
+    <section class="product">
+        <div class="product__photos">
+            <button class="product__navigation product__navigation--prev"><object type="image/svg+xml" data="img/prev.svg"></object></button>
+            <img class="product__photo product__photo--big" src="img/oap1.jpg" alt="Product Photo">
+            <img class="product__photo" src="img/oap2.jpg" alt="Product Photo">
+            <img class="product__photo" src="img/oap3.jpg" alt="Product Photo">
+            <img class="product__photo" src="img/oap4.jpg" alt="Product Photo">
+            <img class="product__photo" src="img/oap5.jpg" alt="Product Photo">
+            <button class="product__navigation product__navigation--next"><object type="image/svg+xml" data="img/next.svg"></object></button>
+        </div>
+        <div class="product__info">
+            <h2 class="product__name">Overalls</h2>
+            <p class="product__desc">
+                Overalls in washed organic cotton denim.<br>
+                Collar, button fly, and adjustable belt at waist.<br>
+                Chest pockets with flap. Long, gently flared<br>
+                sleeves and straight legs with front pockets<br>
+                and back pockets.
+            </p>
+            <form class="color product__color">
+                <label for="color" class="color__title">Color</label>
+                <input id="color" class="color__indicator" type="radio">
+            </form>
+            <div class="size product__size">
+                <span class="size__title">Size</span>
+                <ul class="size__list">
+                    <li class="size__item">XS</li>
+                    <li class="size__item size__item--current">S</li>
+                    <li class="size__item">M</li>
+                    <li class="size__item">L</li>
+                    <li class="size__item">XL</li>
+                </ul>
+            </div>
+            <span class="product__price">$ 160</span>
+            <button class="button product__button">Add to cart</button>
+        </div>
+    </section>
+    <section class="recommendation">
+        <h2 class="title recommendation__title">You may also like</h2>
+        <a class="view-all recommendation__view-all" href="catalog.html">View all</a>
+    </section>
+</main>
+<footer class="footer">
+    <h1 class="logo header__logo"><a class="logo__link footer__link" href="index.html">Nîmes</a></h1>
+    <nav class="menu footer__menu">
+        <ul class="site-menu">
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Shop</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Delivery</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Service</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Sitemap</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="#">Contacts</a></li>
+        </ul>
+        <ul class="socials-menu">
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/facebook.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/instagram.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/pinterest.svg"></object>
+            </a></li>
+            <li class="socials-menu__item"><a class="links-menu__link" href="#">
+                <object type="image/svg+xml" data="img/twitter.svg"></object>
+            </a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
